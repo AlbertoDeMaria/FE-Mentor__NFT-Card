@@ -1,0 +1,84 @@
+.card {
+    max-width: 350px;
+
+    background-color: $very-dark-blue-card-bg;
+    
+    padding: 1.25em;
+    border-radius: 15px; 
+
+    display: grid;
+    gap: 1.5em;
+
+    -webkit-box-shadow: 5px 5px 7px 6px rgba(0,0,0,0.1); 
+    box-shadow: 5px 5px 7px 6px rgba(0,0,0,0.1);
+
+    &__img-container {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    &__info-container {
+        display: grid;
+        gap: .825em;
+
+        .nft-title {
+            color: $white;
+            font-size: 1.5em;
+        }
+
+        .nft-desc {
+            color: $soft-blue;
+            font-size: 1em;
+        }
+
+        .icon-container {
+            display: flex;
+            justify-content: space-between;
+
+            div {
+                display: flex;
+                align-items: center;
+                gap: .5em;
+            
+                p {
+                    font-size: 0.9em;
+                }
+            }
+            
+            .price {
+                font-weight: 700;
+                color: $cyan;
+            }
+
+            .time-left {
+                color: $soft-blue;
+                font-weight: 500;
+            }
+        }
+
+        hr {
+            border: .1px solid $soft-blue;
+            opacity: .25;
+        }
+
+        .profile-container {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+        
+            img {
+                width: 10%;
+                border: 1px solid $white;
+                border-radius: 100%;
+            }
+
+            p {
+                color: $soft-blue;
+
+                .avatar-name {
+                    color: $white;
+                }
+            }
+        }
+    }
+}

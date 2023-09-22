@@ -1,0 +1,11 @@
+body {
+    min-height: 100vh;
+
+    display: grid;
+    place-items: center;
+
+    padding: 2em;
+
+    font-family: $ff-primary;
+    background-color: $very-dark-blue-main-bg;
+}
